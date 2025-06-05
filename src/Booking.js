@@ -132,11 +132,30 @@ function Booking() {
         <div className="confirmation-box">
           <h2>Your Reservation</h2>
           <hr />
-          <p><strong>Name:</strong> <em>{formData.firstName} {formData.lastName}</em></p>
-          <p><strong>Date:</strong> {formData.date}</p>
-          <p><strong>Time:</strong> {formData.time}</p>
-          <p><strong>Guests Count:</strong> {formData.guests}</p>
-          <p><strong>Occasion:</strong> <em>{formData.occasion || 'None'}</em></p>
+<p>
+  <strong>Name:</strong>{' '}
+  <em style={{ color: '#EE9972' }}>
+    {formData.firstName} {formData.lastName}
+  </em>
+</p>
+<p>
+  <strong>Date:</strong>{' '}
+  <span style={{ color: '#EE9972' }}>{formData.date}</span>
+</p>
+<p>
+  <strong>Time:</strong>{' '}
+  <span style={{ color: '#EE9972' }}>{formData.time}</span>
+</p>
+<p>
+  <strong>Guests Count:</strong>{' '}
+  <span style={{ color: '#EE9972' }}>{formData.guests}</span>
+</p>
+<p>
+  <strong>Occasion:</strong>{' '}
+  <em style={{ color: '#EE9972' }}>
+    {formData.occasion || 'None'}
+  </em>
+</p>
         </div>
       )}
     </div>

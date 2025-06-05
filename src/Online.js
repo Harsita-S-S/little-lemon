@@ -1,8 +1,10 @@
 import React from 'react';
 import './Online.css';
+import { Link } from 'react-router-dom';
 import bruschetta from './images/bruschetta.png';
 import greeksalad from './images/greek-salad.jpg';
 import lemondesert from './images/lemon.jpg';
+
 function Online() {
   return (
     <section className="online-order-site" id="menu">
@@ -11,7 +13,9 @@ function Online() {
           <h1>This Week's Specials!</h1>
         </div>
         <div className="order-online">
-          <button>Order Online</button>
+          <Link to="/Booking">
+            <button>Order Online</button>
+          </Link>
         </div>
       </section>
       <section className="special-section-part-two">
@@ -25,11 +29,12 @@ function Online() {
             <p>
               The famous Greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.
             </p>
-            <a href="#" className="order-link">
+            <Link to="/Booking" className="order-link">
               Order a delivery <span className="icon">🛵</span>
-            </a>
+            </Link>
           </div>
         </div>
+
         <div className="menu-card">
           <img src={bruschetta} alt="Bruschetta" />
           <div className="menu-card-content">
@@ -40,11 +45,12 @@ function Online() {
             <p>
               Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.
             </p>
-            <a href="#" className="order-link">
+            <Link to="/Booking" className="order-link">
               Order a delivery <span className="icon">🛵</span>
-            </a>
+            </Link>
           </div>
         </div>
+
         <div className="menu-card">
           <img src={lemondesert} alt="Lemon Dessert" />
           <div className="menu-card-content">
@@ -55,9 +61,9 @@ function Online() {
             <p>
               This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined.
             </p>
-            <a href="#" className="order-link">
+            <Link to="/Booking" className="order-link">
               Order a delivery <span className="icon">🛵</span>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

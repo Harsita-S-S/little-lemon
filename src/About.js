@@ -49,8 +49,8 @@ function About() {
       x: 0,
       opacity: 1,
       transition: {
-        x: { type: 'spring', stiffness: 300, damping: 30 },
-        opacity: { duration: 0.2 },
+        x: { type: 'spring', stiffness: 270, damping: 25 },
+        opacity: { duration: 0.19 },
       },
     },
     exit: function(direction) {
@@ -58,8 +58,8 @@ function About() {
         x: direction < 0 ? '100%' : '-100%',
         opacity: 0,
         transition: {
-          x: { type: 'spring', stiffness: 300, damping: 30 },
-          opacity: { duration: 0.2 },
+          x: { type: 'spring', stiffness: 270, damping: 25 },
+          opacity: { duration: 0.19 },
         },
       };
     },
